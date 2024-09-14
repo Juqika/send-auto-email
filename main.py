@@ -78,19 +78,14 @@ what up {name} mate!!
         time.sleep(delay)
 
 
-file_path = 'D:\coding\email\data.xlsx'
+file_path = 'C:\...\your_path_files.xlsx'
 from_address = os.getenv("EMAIL_USER")
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
 login = os.getenv("EMAIL_USER")
 password = os.getenv("PASSWORD_USER")
 send_time = 2
-# name = get_name()
 subject = "----___TESTING___----"
-# body_t = f"""
-# what up {name} a
-
-# """
 
 
 sendEmail_to_excel(file_path, from_address, smtp_server, smtp_port, login, password, subject, delay=send_time)
